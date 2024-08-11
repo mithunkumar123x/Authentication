@@ -1,9 +1,9 @@
 
 import { Route, Switch } from 'react-router-dom/cjs/react-router-dom.min'
 import './App.css'
-import Layout from './components/Layout/Layout'
+import Layout from './components/Layout/Layout';
 import HomePage from './pages/HomePage';
-import AuthPage from './pages/AuthPage'
+import AuthPage from './pages/AuthPage';
 import UserProfile from './pages/ProfilePage';
 
 
