@@ -1,9 +1,9 @@
 import { useState, createContext } from 'react';
 
- const AuthContext = createContext({
+export  const AuthContext = createContext({
   token: '',
   isLoggedIn: false,
-  login: (token) => {},
+  login: () => {},
   logout: () => {},
 });
  const AuthContextProvider = (props) => {
@@ -33,4 +33,4 @@ import { useState, createContext } from 'react';
   );
 };
 
-export default {AuthContext,AuthContextProvider};
+export default AuthContextProvider;

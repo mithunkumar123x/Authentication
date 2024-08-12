@@ -1,5 +1,5 @@
 
-import { Route, Switch } from 'react-router-dom/cjs/react-router-dom.min'
+import { Redirect, Route, Switch } from 'react-router-dom/cjs/react-router-dom.min'
 import './App.css'
 import Layout from './components/Layout/Layout';
 import HomePage from './pages/HomePage';
@@ -23,6 +23,9 @@ function App() {
         </Route>
         <Route path = '/profile'>
           <UserProfile />
+        </Route>
+        <Route path = '*'>
+           <Redirect to='/' />
         </Route>
       </Switch>
     </Layout>
